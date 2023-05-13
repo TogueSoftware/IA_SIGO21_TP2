@@ -169,6 +169,7 @@
                 abiertas(abiertas.Length - 1) = nod
                 'nodo no  existente, lo agrego a abiertas
 
+
                 If nod.exitoso Then
                     'solucion encontrada.
                     Console.WriteLine("")
