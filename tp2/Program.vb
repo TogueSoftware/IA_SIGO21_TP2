@@ -15,7 +15,7 @@ Module Program
 
 
     'mapa de estados (posiciones iniciales)
-    Dim posicionX As Integer = 790
+    Dim posicionX As Integer = -288
 
     'tamaño máximo de desplazamiento debido al tamaño de la pieza del block
     Public anchoBlock As Integer = 800
@@ -96,7 +96,6 @@ Module Program
                     Try
                         If abiertas(0) IsNot Nothing Then
                             If Not abiertas(0).exitoso Then
-
                                 If ii = 1 Then
                                     abiertas(0).ExpandirExploratoria()
 
@@ -110,7 +109,6 @@ Module Program
                                 exito = True
                             End If
                         End If
-
                     Catch
                         fallido = True
                     End Try
